@@ -147,26 +147,32 @@ The build scripts support:
 ## Project Structure
 ```bash
 audio-binaural-pipeline/
-├── README.md              
-├── LICENSE               # License information
-├── docs/                 # Documentation
-│   ├── presentation.pdf  # Project presentation
-│   └── report.pdf       # Detailed project report
-├── part1-opus/          # Opus encoder/decoder
-│   ├── build.sh         # Build script
-│   ├── common.h         # Common definitions
-│   ├── encode.c         # Encoder implementation
-│   └── decode.c         # Decoder implementation
-├── part2-hrtf/          # HRTF processor
-│   ├── build1.sh        # Build script
-│   ├── common.h         # Common definitions
-│   ├── hrtf.h          # HRTF processing header
-│   ├── hrtf.c          # HRTF processing implementation
-│   └── main.c          # HRTF processor entry point
-├── examples/            # Example files
-│   └── README.md       # Usage examples
-└── hrtf_data/          
-    └── MIT_KEMAR/      
+├── README.md
+├── LICENSE
+├── Makefile
+├── setup.sh
+├── .gitignore
+├── src/
+│   ├── part1-opus/
+│   │   ├── encode.c
+│   │   ├── decode.c
+│   │   └── common.h
+│   └── part2-hrtf/
+│       ├── main.c
+│       ├── hrtf.c
+│       ├── hrtf.h
+│       └── common.h
+├── build/
+│   ├── build_opus.sh
+│   └── build_hrtf.sh
+├── examples/
+│   ├── test_audio/
+│   └── run_pipeline.sh
+├── docs/
+│   ├── presentation.pdf
+│   └── report.pdf
+└── hrtf_data/
+    └── README.md 
 
 ```
 

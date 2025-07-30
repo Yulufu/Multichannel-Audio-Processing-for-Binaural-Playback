@@ -1,2 +1,40 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Build artifacts
+build/
+*.o
+*.a
+*.so
+*.dylib
+
+# Executables
+encode
+decode
+hrtf_processor
+
+# Audio files
+*.wav
+*.opus
+*.mp3
+*.flac
+
+# HRTF data (large files)
+hrtf_data/MIT_KEMAR/
+!hrtf_data/README.md
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+
+# Temporary files
+tmp/
+temp/
